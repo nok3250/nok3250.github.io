@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Landing Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			background-color: #f9f9f9;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.logo {
+			width: 200px;
+			height: 200px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 0;
+			text-align: center;
+		}
+
+		p {
+			margin: 0;
+			text-align: center;
+			color: #666;
+			max-width: 600px;
+			margin-bottom: 30px;
+		}
+
+		.buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.button {
+			padding: 10px 20px;
+			border-radius: 5px;
+			background-color: #0099cc;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			margin-right: 10px;
+			text-decoration: none;
+			text-align: center;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #0077b3;
+		}
+
+		@media screen and (max-width: 768px) {
+			h1 {
+				font-size: 28px;
+			}
+
+			.logo {
+				width: 150px;
+				height: 150px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			.button {
+				font-size: 16px;
+				padding: 8px 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="path/to/logo.png" alt="Logo">
+		</div>
+		<h1>Welcome to our website</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl ac justo viverra pulvinar. Duis rhoncus sem eu dui fermentum, eget bibendum mi rutrum. Nam ultrices velit non odio iaculis ullamcorper. Ut vitae convallis tellus. In hac habitasse platea dictumst. Morbi id pretium elit. Nullam blandit leo et pharetra vehicula.</p>
+		<div class="buttons">
+			<a class="button" href="https://bit.ly/AppStoreFlatty"><i class="fab fa-google-play"></i> Download from Google Play</a>
+			<a class="button" href="https://bit.ly/GooglePlayFlatty"><i class="fab fa-apple"></i> Download from App Store</a>
+		</div>
+	</div>
+</body>
+</html>
