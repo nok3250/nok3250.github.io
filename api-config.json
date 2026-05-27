@@ -1,0 +1,4 @@
+{
+  "apiUrl": "http://52.148.240.51:44505/EntryPoint/",
+  "signalRHost": "http://52.148.240.51:44506/NotificationService/notify"
+}
