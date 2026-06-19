@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kadilo.inc.flatty",
+    "sha256_cert_fingerprints": [
+      "93:1D:63:C3:A6:49:10:F1:3A:26:5C:9A:DC:C7:ED:5A:AD:15:2C:F4:4E:13:D8:C8:C8:8C:32:88:C2:F4:5D:96"
+    ]
+  }
+}]
