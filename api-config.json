@@ -1,4 +1,4 @@
 {
   "apiUrl": "https://flatty-api-dqgaagenbbeka8bn.polandcentral-01.azurewebsites.net",
-  "signalRHost": "http://52.148.240.51:44506/NotificationService/notify"
+  "signalRHost": "https://flatty-signal-eufhd7egfwfgewey.polandcentral-01.azurewebsites.net/notify"
 }
