@@ -34,7 +34,14 @@
         .meta {
             font-size: 14px;
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 8px;
+        }
+
+        .translation-note {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 32px;
         }
 
         h2 {
@@ -105,294 +112,705 @@
             font-size: 13px;
             color: #888;
         }
+
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+        .lang-switch button {
+            font: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border: 1px solid #d0d0d0;
+            border-radius: 16px;
+            background: #ffffff;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .lang-switch button.active {
+            background: #0066cc;
+            border-color: #0066cc;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <h1>Terms of Use — Flatty</h1>
-    <p class="meta">
-        <strong>Effective date:</strong> June 17, 2025 &nbsp;&middot;&nbsp;
-        <strong>Last updated:</strong> June 17, 2025
-    </p>
+    <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+        <button type="button" id="btn-ru" onclick="setLang('ru')">Русский</button>
+    </div>
 
-    <!-- 1 -->
-    <h2>1. Acceptance of Terms</h2>
-    <p>
-        These Terms of Use ("Terms") govern your use of the <strong>Flatty</strong> mobile application
-        (the "App"), operated by <strong>Kadilo Inc.</strong> ("we", "us", or "our").
-    </p>
-    <p>
-        By downloading, installing, or using the App, you confirm that you have read, understood,
-        and agree to be bound by these Terms. If you do not agree, please do not use the App.
-    </p>
-    <p>
-        You must be at least <strong>16 years old</strong> to use the App.
-    </p>
+    <!-- ======================= ENGLISH ======================= -->
+    <div id="content-en" class="lang-content">
 
-    <!-- 2 -->
-    <h2>2. About the App</h2>
-    <p>
-        Flatty is a rental apartment aggregator that collects and displays property listings
-        from publicly available sources in Belarus and Poland. The App is provided on a
-        freemium basis — core features are free, and a Premium subscription is available
-        for an enhanced experience.
-    </p>
-    <div class="warning">
+        <h1>Terms of Use — Flatty</h1>
+        <p class="meta">
+            <strong>Effective date:</strong> June 17, 2025 &nbsp;&middot;&nbsp;
+            <strong>Last updated:</strong> August 19, 2026
+        </p>
+        <p class="translation-note">&nbsp;</p>
+
+        <!-- 1 -->
+        <h2>1. Acceptance of Terms</h2>
         <p>
-            <strong>Important:</strong> Flatty aggregates listings from third-party sources.
-            We do not verify the accuracy, completeness, or legality of individual listings.
-            Always verify listing details directly with the landlord or agency before
-            making any decisions.
+            These Terms of Use ("Terms") govern your use of the <strong>Flatty</strong> mobile application
+            (the "App"), operated by <strong>Kadilo Inc.</strong> ("we", "us", or "our").
         </p>
-    </div>
-
-    <!-- 3 -->
-    <h2>3. License to Use the App</h2>
-    <p>
-        We grant you a limited, non-exclusive, non-transferable, revocable licence to use
-        the App for personal, non-commercial purposes, strictly in accordance with these Terms.
-    </p>
-    <p>You must not:</p>
-    <ul>
-        <li>Copy, reproduce, modify, or create derivative works based on the App or any part of it;</li>
-        <li>Reverse engineer, decompile, or attempt to extract the source code of the App;</li>
-        <li>Use the App for any commercial purpose or on behalf of any third party;</li>
-        <li>Remove, alter, or obscure any proprietary notices or trademarks in the App;</li>
-        <li>Use automated tools (bots, scrapers, crawlers) to extract data from the App;</li>
-        <li>Attempt to interfere with or disrupt the App's infrastructure or security.</li>
-    </ul>
-    <p>
-        All intellectual property rights in the App, including trademarks, design, and software,
-        remain the exclusive property of Kadilo Inc.
-    </p>
-
-    <!-- 4 -->
-    <h2>4. User Responsibilities</h2>
-    <p>You agree to use the App only for lawful purposes and in a manner that does not:</p>
-    <ul>
-        <li>Violate any applicable local, national, or international law or regulation;</li>
-        <li>Infringe the rights of any third party;</li>
-        <li>Transmit any unsolicited or unauthorised advertising or promotional material.</li>
-    </ul>
-    <p>
-        You are responsible for ensuring that your device meets the minimum technical requirements
-        for the App and for maintaining the security of your device.
-    </p>
-    <div class="highlight">
-        We recommend against jailbreaking (iOS) or rooting (Android) your device.
-        Doing so may compromise your device's security features and cause the App
-        to malfunction or become unavailable.
-    </div>
-
-    <!-- 5 -->
-    <h2>5. Third-Party Services</h2>
-    <p>
-        The App integrates the following third-party services, each governed by their own terms:
-    </p>
-    <ul>
-        <li><a href="https://policies.google.com/terms" target="_blank">Google Play Services</a></li>
-        <li><a href="https://policies.google.com/terms" target="_blank">Google AdMob</a></li>
-        <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Cloud Messaging</a></li>
-        <li><a href="https://cloud.google.com/maps-platform/terms" target="_blank">Google Maps SDK</a></li>
-    </ul>
-    <p>
-        We are not responsible for the content, privacy practices, or terms of any third-party services.
-    </p>
-
-    <!-- 6 -->
-    <h2>6. Premium Subscription</h2>
-
-    <h3>6.1 What's included</h3>
-    <p>
-        The Premium subscription removes advertisements and may unlock additional features
-        as described in the App at the time of purchase. Features included in Premium
-        may change over time; we will notify users of significant changes.
-    </p>
-
-    <h3>6.2 Pricing and billing</h3>
-    <p>
-        Subscription prices are displayed in the App before purchase and are charged
-        through your Apple App Store or Google Play account. Prices include applicable taxes
-        where required by law.
-    </p>
-
-    <h3>6.3 Auto-renewal</h3>
-    <p>
-        Subscriptions automatically renew at the end of each billing period unless cancelled
-        at least 24 hours before the renewal date. Your account will be charged for renewal
-        within 24 hours prior to the end of the current period.
-    </p>
-
-    <h3>6.4 How to cancel</h3>
-    <p>To cancel your subscription:</p>
-    <ul>
-        <li>
-            <strong>iOS:</strong> Open <em>Settings → [Your Name] → Subscriptions → Flatty → Cancel</em>
-        </li>
-        <li>
-            <strong>Android:</strong> Open <em>Google Play → Profile → Payments &amp; subscriptions → Subscriptions → Flatty → Cancel</em>
-        </li>
-    </ul>
-    <p>
-        Deleting the App does <strong>not</strong> cancel your subscription.
-        Cancellation takes effect at the end of the current billing period;
-        you retain access to Premium until that date.
-    </p>
-
-    <h3>6.5 Refunds</h3>
-    <p>
-        All purchases are processed by Apple or Google, and refunds are subject to their
-        respective refund policies:
-    </p>
-    <ul>
-        <li>
-            <strong>iOS:</strong>
-            <a href="https://support.apple.com/en-us/118223" target="_blank">Apple refund policy</a>
-        </li>
-        <li>
-            <strong>Android:</strong>
-            <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play refund policy</a>
-        </li>
-    </ul>
-
-    <h3>6.6 EU / EEA consumers — right of withdrawal</h3>
-    <div class="highlight">
         <p>
-            If you are a consumer located in the European Economic Area (EEA), including Poland,
-            you have the right to withdraw from a digital content purchase within
-            <strong>14 days</strong> of the transaction, provided that the delivery of the
-            digital content has not yet begun with your prior express consent.
+            By downloading, installing, or using the App, you confirm that you have read, understood,
+            and agree to be bound by these Terms. If you do not agree, please do not use the App.
         </p>
-        <p style="margin-bottom:0;">
-            By starting to use Premium features immediately after purchase, you expressly consent
-            to the immediate delivery of the digital content and acknowledge that you thereby
-            lose your right of withdrawal. This does not affect your statutory rights under
-            applicable consumer protection law.
-        </p>
-    </div>
-
-    <!-- 7 -->
-    <h2>7. Advertisements</h2>
-    <p>
-        Free users may see advertisements served by Google AdMob. EEA users will be asked
-        for consent before personalised ads are shown. You may opt out of personalised ads
-        at any time through the App's privacy settings.
-    </p>
-    <p>
-        Premium subscribers do not see third-party advertisements.
-    </p>
-
-    <!-- 8 -->
-    <h2>8. Internet Connectivity</h2>
-    <p>
-        Some features of the App require an active internet connection.
-        We are not responsible for the App not working at full functionality
-        if you do not have access to Wi-Fi or if you have exhausted your mobile data allowance.
-    </p>
-    <p>
-        If you use the App outside of a Wi-Fi area, your mobile carrier's terms apply,
-        including any data roaming charges. By using the App, you accept responsibility
-        for any such charges.
-    </p>
-
-    <!-- 9 -->
-    <h2>9. Disclaimer of Warranties</h2>
-    <p>
-        The App is provided on an "as is" and "as available" basis without warranties
-        of any kind, either express or implied, including but not limited to warranties
-        of merchantability, fitness for a particular purpose, or non-infringement.
-    </p>
-    <p>
-        We do not warrant that the App will be uninterrupted, error-free, or free of viruses
-        or other harmful components.
-    </p>
-    <div class="warning">
         <p>
-            Listing information in the App is aggregated from third-party sources and may be
-            inaccurate, incomplete, or out of date. We accept no liability for any loss or
-            damage arising from reliance on listing information displayed in the App.
+            You must be at least <strong>16 years old</strong> to use the App.
         </p>
-    </div>
 
-    <!-- 10 -->
-    <h2>10. Limitation of Liability</h2>
-    <p>
-        To the maximum extent permitted by applicable law, Kadilo Inc. shall not be liable
-        for any indirect, incidental, special, consequential, or punitive damages, including
-        loss of profits, data, or goodwill, arising out of or in connection with your use
-        of the App.
-    </p>
-    <p>
-        Our total liability to you for any claim arising out of or relating to these Terms
-        or the App shall not exceed the amount you paid us in the 12 months preceding the claim.
-    </p>
-    <div class="highlight">
+        <!-- 2 -->
+        <h2>2. About the App</h2>
         <p>
-            <strong>EU / EEA consumers:</strong> Nothing in these Terms limits or excludes
-            our liability for death or personal injury caused by negligence, fraud,
-            or any other liability that cannot be excluded or limited under applicable
-            consumer protection law. Your statutory rights are not affected.
+            Flatty is a rental apartment aggregator that collects and displays property listings
+            from publicly available sources in Belarus. The App is provided on a
+            freemium basis — core features are free, and a Premium subscription is available
+            for an enhanced experience.
         </p>
+        <div class="warning">
+            <p>
+                <strong>Important:</strong> Flatty aggregates listings from third-party sources.
+                We do not verify the accuracy, completeness, or legality of individual listings.
+                Always verify listing details directly with the landlord or agency before
+                making any decisions.
+            </p>
+        </div>
+
+        <!-- 3 -->
+        <h2>3. Account</h2>
+        <p>
+            You can use the App without an account. Optionally, you may sign in with your
+            Google or Apple account to link your profile and Premium subscription across
+            devices and reinstalls. Authentication is performed by Google or Apple;
+            we never receive your password.
+        </p>
+        <p>
+            You are responsible for maintaining the security of the Google or Apple account
+            you use to sign in. To delete your account data, contact us at
+            <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a> —
+            see our Privacy Policy for details.
+        </p>
+
+        <!-- 4 -->
+        <h2>4. License to Use the App</h2>
+        <p>
+            We grant you a limited, non-exclusive, non-transferable, revocable licence to use
+            the App for personal, non-commercial purposes, strictly in accordance with these Terms.
+        </p>
+        <p>You must not:</p>
+        <ul>
+            <li>Copy, reproduce, modify, or create derivative works based on the App or any part of it;</li>
+            <li>Reverse engineer, decompile, or attempt to extract the source code of the App;</li>
+            <li>Use the App for any commercial purpose or on behalf of any third party;</li>
+            <li>Remove, alter, or obscure any proprietary notices or trademarks in the App;</li>
+            <li>Use automated tools (bots, scrapers, crawlers) to extract data from the App;</li>
+            <li>Attempt to interfere with or disrupt the App's infrastructure or security.</li>
+        </ul>
+        <p>
+            All intellectual property rights in the App, including trademarks, design, and software,
+            remain the exclusive property of Kadilo Inc.
+        </p>
+
+        <!-- 5 -->
+        <h2>5. User Responsibilities</h2>
+        <p>You agree to use the App only for lawful purposes and in a manner that does not:</p>
+        <ul>
+            <li>Violate any applicable local, national, or international law or regulation;</li>
+            <li>Infringe the rights of any third party;</li>
+            <li>Transmit any unsolicited or unauthorised advertising or promotional material.</li>
+        </ul>
+        <p>
+            You are responsible for ensuring that your device meets the minimum technical requirements
+            for the App and for maintaining the security of your device.
+        </p>
+        <div class="highlight">
+            We recommend against jailbreaking (iOS) or rooting (Android) your device.
+            Doing so may compromise your device's security features and cause the App
+            to malfunction or become unavailable.
+        </div>
+
+        <!-- 6 -->
+        <h2>6. Third-Party Services</h2>
+        <p>
+            The App integrates the following third-party services, each governed by their own terms:
+        </p>
+        <ul>
+            <li><a href="https://policies.google.com/terms" target="_blank">Google Play Services</a></li>
+            <li><a href="https://policies.google.com/terms" target="_blank">Google AdMob</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Cloud Messaging</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Analytics</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Crashlytics</a></li>
+            <li><a href="https://cloud.google.com/maps-platform/terms" target="_blank">Google Maps SDK</a></li>
+            <li><a href="https://policies.google.com/terms" target="_blank">Google Sign-In</a> (optional)</li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">Sign in with Apple</a> (optional)</li>
+        </ul>
+        <p>
+            We are not responsible for the content, privacy practices, or terms of any third-party services.
+        </p>
+
+        <!-- 7 -->
+        <h2>7. Premium Subscription</h2>
+
+        <h3>7.1 What's included</h3>
+        <p>
+            The Premium subscription removes advertisements and may unlock additional features
+            as described in the App at the time of purchase. Features included in Premium
+            may change over time; we will notify users of significant changes.
+        </p>
+
+        <h3>7.2 Pricing and billing</h3>
+        <p>
+            Subscription prices are displayed in the App before purchase and are charged
+            through your Apple App Store or Google Play account. Prices include applicable taxes
+            where required by law.
+        </p>
+
+        <h3>7.3 Auto-renewal</h3>
+        <p>
+            Subscriptions automatically renew at the end of each billing period unless cancelled
+            at least 24 hours before the renewal date. Your account will be charged for renewal
+            within 24 hours prior to the end of the current period.
+        </p>
+
+        <h3>7.4 How to cancel</h3>
+        <p>To cancel your subscription:</p>
+        <ul>
+            <li>
+                <strong>iOS:</strong> Open <em>Settings → [Your Name] → Subscriptions → Flatty → Cancel</em>
+            </li>
+            <li>
+                <strong>Android:</strong> Open <em>Google Play → Profile → Payments &amp; subscriptions → Subscriptions → Flatty → Cancel</em>
+            </li>
+        </ul>
+        <p>
+            Deleting the App does <strong>not</strong> cancel your subscription.
+            Cancellation takes effect at the end of the current billing period;
+            you retain access to Premium until that date.
+        </p>
+
+        <h3>7.5 Refunds</h3>
+        <p>
+            All purchases are processed by Apple or Google, and refunds are subject to their
+            respective refund policies:
+        </p>
+        <ul>
+            <li>
+                <strong>iOS:</strong>
+                <a href="https://support.apple.com/en-us/118223" target="_blank">Apple refund policy</a>
+            </li>
+            <li>
+                <strong>Android:</strong>
+                <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play refund policy</a>
+            </li>
+        </ul>
+
+        <h3>7.6 EU / EEA consumers — right of withdrawal</h3>
+        <div class="highlight">
+            <p>
+                If you are a consumer located in the European Economic Area (EEA),
+                you have the right to withdraw from a digital content purchase within
+                <strong>14 days</strong> of the transaction, provided that the delivery of the
+                digital content has not yet begun with your prior express consent.
+            </p>
+            <p style="margin-bottom:0;">
+                By starting to use Premium features immediately after purchase, you expressly consent
+                to the immediate delivery of the digital content and acknowledge that you thereby
+                lose your right of withdrawal. This does not affect your statutory rights under
+                applicable consumer protection law.
+            </p>
+        </div>
+
+        <!-- 8 -->
+        <h2>8. Advertisements</h2>
+        <p>
+            Free users may see advertisements served by Google AdMob. EEA users will be asked
+            for consent before personalised ads are shown. You may opt out of personalised ads
+            at any time through the App's privacy settings.
+        </p>
+        <p>
+            Premium subscribers do not see third-party advertisements.
+        </p>
+
+        <!-- 9 -->
+        <h2>9. Internet Connectivity</h2>
+        <p>
+            Some features of the App require an active internet connection.
+            We are not responsible for the App not working at full functionality
+            if you do not have access to Wi-Fi or if you have exhausted your mobile data allowance.
+        </p>
+        <p>
+            If you use the App outside of a Wi-Fi area, your mobile carrier's terms apply,
+            including any data roaming charges. By using the App, you accept responsibility
+            for any such charges.
+        </p>
+
+        <!-- 10 -->
+        <h2>10. Disclaimer of Warranties</h2>
+        <p>
+            The App is provided on an "as is" and "as available" basis without warranties
+            of any kind, either express or implied, including but not limited to warranties
+            of merchantability, fitness for a particular purpose, or non-infringement.
+        </p>
+        <p>
+            We do not warrant that the App will be uninterrupted, error-free, or free of viruses
+            or other harmful components.
+        </p>
+        <div class="warning">
+            <p>
+                Listing information in the App is aggregated from third-party sources and may be
+                inaccurate, incomplete, or out of date. We accept no liability for any loss or
+                damage arising from reliance on listing information displayed in the App.
+            </p>
+        </div>
+
+        <!-- 11 -->
+        <h2>11. Limitation of Liability</h2>
+        <p>
+            To the maximum extent permitted by applicable law, Kadilo Inc. shall not be liable
+            for any indirect, incidental, special, consequential, or punitive damages, including
+            loss of profits, data, or goodwill, arising out of or in connection with your use
+            of the App.
+        </p>
+        <p>
+            Our total liability to you for any claim arising out of or relating to these Terms
+            or the App shall not exceed the amount you paid us in the 12 months preceding the claim.
+        </p>
+        <div class="highlight">
+            <p>
+                <strong>EU / EEA consumers:</strong> Nothing in these Terms limits or excludes
+                our liability for death or personal injury caused by negligence, fraud,
+                or any other liability that cannot be excluded or limited under applicable
+                consumer protection law. Your statutory rights are not affected.
+            </p>
+        </div>
+
+        <!-- 12 -->
+        <h2>12. Changes to the App and These Terms</h2>
+        <p>
+            We may update the App or these Terms at any time. We will notify you of material changes
+            by updating the "Last updated" date at the top of this page. Where required by law,
+            we will provide more prominent notice (e.g., in-app notification).
+        </p>
+        <p>
+            Continued use of the App after changes are posted constitutes acceptance of the
+            updated Terms. If you do not accept the updated Terms, you must stop using the App.
+        </p>
+        <p>
+            We may also discontinue the App or any feature at any time. Where reasonably practicable,
+            we will provide advance notice of discontinuation.
+        </p>
+
+        <!-- 13 -->
+        <h2>13. Termination</h2>
+        <p>
+            We may suspend or terminate your access to the App if you breach these Terms,
+            without prior notice. Upon termination, all licences granted to you under these Terms
+            immediately cease.
+        </p>
+        <p>
+            You may stop using the App at any time by uninstalling it from your device.
+            Uninstalling the App does not cancel any active subscription — see Section 7.4.
+            To delete your account data, see Section 3.
+        </p>
+
+        <!-- 14 -->
+        <h2>14. Governing Law and Dispute Resolution</h2>
+        <p>
+            These Terms are governed by applicable law. If you are a consumer in the EEA,
+            you benefit from the mandatory consumer protection provisions of the law
+            of your country of residence, which cannot be derogated from by agreement.
+        </p>
+        <p>
+            We encourage you to contact us first at
+            <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
+            to resolve any dispute informally. EEA consumers may also use the
+            European Commission's Online Dispute Resolution platform:
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.
+        </p>
+
+        <!-- 15 -->
+        <h2>15. Contact Us</h2>
+        <p>
+            If you have any questions about these Terms, please contact us:
+        </p>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>These Terms apply to the Flatty mobile application for Android and iOS.</p>
+        </footer>
     </div>
 
-    <!-- 11 -->
-    <h2>11. Changes to the App and These Terms</h2>
-    <p>
-        We may update the App or these Terms at any time. We will notify you of material changes
-        by updating the "Last updated" date at the top of this page. Where required by law,
-        we will provide more prominent notice (e.g., in-app notification).
-    </p>
-    <p>
-        Continued use of the App after changes are posted constitutes acceptance of the
-        updated Terms. If you do not accept the updated Terms, you must stop using the App.
-    </p>
-    <p>
-        We may also discontinue the App or any feature at any time. Where reasonably practicable,
-        we will provide advance notice of discontinuation.
-    </p>
+    <!-- ======================= РУССКИЙ ======================= -->
+    <div id="content-ru" class="lang-content" style="display:none" lang="ru">
 
-    <!-- 12 -->
-    <h2>12. Termination</h2>
-    <p>
-        We may suspend or terminate your access to the App if you breach these Terms,
-        without prior notice. Upon termination, all licences granted to you under these Terms
-        immediately cease.
-    </p>
-    <p>
-        You may stop using the App at any time by uninstalling it from your device.
-        Uninstalling the App does not cancel any active subscription — see Section 6.4.
-    </p>
+        <h1>Условия использования — Flatty</h1>
+        <p class="meta">
+            <strong>Дата вступления в силу:</strong> 17 июня 2025 г. &nbsp;&middot;&nbsp;
+            <strong>Последнее обновление:</strong> 19 августа 2026 г.
+        </p>
+        <p class="translation-note">
+            Перевод предоставлен для удобства. В случае расхождений преимущественную силу имеет английская версия.
+        </p>
 
-    <!-- 13 -->
-    <h2>13. Governing Law and Dispute Resolution</h2>
-    <p>
-        These Terms are governed by applicable law. If you are a consumer in the EEA,
-        you benefit from the mandatory consumer protection provisions of the law
-        of your country of residence, which cannot be derogated from by agreement.
-    </p>
-    <p>
-        We encourage you to contact us first at
-        <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
-        to resolve any dispute informally. EEA consumers may also use the
-        European Commission's Online Dispute Resolution platform:
-        <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.
-    </p>
+        <!-- 1 -->
+        <h2>1. Принятие условий</h2>
+        <p>
+            Настоящие Условия использования («Условия») регулируют использование вами мобильного
+            приложения <strong>Flatty</strong> («Приложение»), которым управляет
+            <strong>Kadilo Inc.</strong> («мы», «нас», «наш»).
+        </p>
+        <p>
+            Загружая, устанавливая или используя Приложение, вы подтверждаете, что прочитали,
+            поняли настоящие Условия и согласны их соблюдать. Если вы не согласны,
+            пожалуйста, не используйте Приложение.
+        </p>
+        <p>
+            Для использования Приложения вам должно быть не менее <strong>16 лет</strong>.
+        </p>
 
-    <!-- 14 -->
-    <h2>14. Contact Us</h2>
-    <p>
-        If you have any questions about these Terms, please contact us:
-    </p>
-    <div class="contact-block">
-        <p><strong>Kadilo Inc.</strong></p>
-        <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        <!-- 2 -->
+        <h2>2. О Приложении</h2>
+        <p>
+            Flatty — агрегатор объявлений об аренде квартир, который собирает и отображает
+            объявления о недвижимости из общедоступных источников в Беларуси.
+            Приложение предоставляется по модели freemium: базовые функции бесплатны,
+            а для расширенных возможностей доступна премиум-подписка.
+        </p>
+        <div class="warning">
+            <p>
+                <strong>Важно:</strong> Flatty агрегирует объявления из сторонних источников.
+                Мы не проверяем точность, полноту или законность отдельных объявлений.
+                Всегда проверяйте детали объявления напрямую у арендодателя или агентства,
+                прежде чем принимать какие-либо решения.
+            </p>
+        </div>
+
+        <!-- 3 -->
+        <h2>3. Аккаунт</h2>
+        <p>
+            Вы можете использовать Приложение без аккаунта. По желанию вы можете войти через
+            аккаунт Google или Apple, чтобы связать свой профиль и премиум-подписку между
+            устройствами и переустановками. Аутентификацию выполняют Google или Apple;
+            мы никогда не получаем ваш пароль.
+        </p>
+        <p>
+            Вы несёте ответственность за безопасность аккаунта Google или Apple,
+            который используете для входа. Чтобы удалить данные своего аккаунта,
+            напишите нам на <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a> —
+            подробности см. в нашей Политике конфиденциальности.
+        </p>
+
+        <!-- 4 -->
+        <h2>4. Лицензия на использование Приложения</h2>
+        <p>
+            Мы предоставляем вам ограниченную, неисключительную, непередаваемую, отзывную лицензию
+            на использование Приложения в личных, некоммерческих целях, строго в соответствии
+            с настоящими Условиями.
+        </p>
+        <p>Вы не вправе:</p>
+        <ul>
+            <li>Копировать, воспроизводить, изменять или создавать производные произведения на основе Приложения или любой его части;</li>
+            <li>Осуществлять обратную разработку, декомпиляцию или попытки извлечения исходного кода Приложения;</li>
+            <li>Использовать Приложение в коммерческих целях или в интересах третьих лиц;</li>
+            <li>Удалять, изменять или скрывать любые уведомления о правах или товарные знаки в Приложении;</li>
+            <li>Использовать автоматизированные инструменты (боты, скраперы, краулеры) для извлечения данных из Приложения;</li>
+            <li>Пытаться вмешиваться в работу инфраструктуры или систем безопасности Приложения.</li>
+        </ul>
+        <p>
+            Все права интеллектуальной собственности на Приложение, включая товарные знаки,
+            дизайн и программное обеспечение, остаются исключительной собственностью Kadilo Inc.
+        </p>
+
+        <!-- 5 -->
+        <h2>5. Обязанности пользователя</h2>
+        <p>Вы соглашаетесь использовать Приложение только в законных целях и способом, который не:</p>
+        <ul>
+            <li>Нарушает применимое местное, национальное или международное законодательство;</li>
+            <li>Нарушает права третьих лиц;</li>
+            <li>Связан с рассылкой несанкционированных рекламных или промоматериалов.</li>
+        </ul>
+        <p>
+            Вы несёте ответственность за соответствие вашего устройства минимальным техническим
+            требованиям Приложения и за обеспечение безопасности вашего устройства.
+        </p>
+        <div class="highlight">
+            Мы не рекомендуем выполнять jailbreak (iOS) или root (Android) вашего устройства.
+            Это может нарушить механизмы безопасности устройства и привести к некорректной
+            работе или недоступности Приложения.
+        </div>
+
+        <!-- 6 -->
+        <h2>6. Сторонние сервисы</h2>
+        <p>
+            Приложение интегрирует следующие сторонние сервисы, каждый из которых регулируется
+            собственными условиями:
+        </p>
+        <ul>
+            <li><a href="https://policies.google.com/terms" target="_blank">Google Play Services</a></li>
+            <li><a href="https://policies.google.com/terms" target="_blank">Google AdMob</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Cloud Messaging</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Analytics</a></li>
+            <li><a href="https://firebase.google.com/terms" target="_blank">Firebase Crashlytics</a></li>
+            <li><a href="https://cloud.google.com/maps-platform/terms" target="_blank">Google Maps SDK</a></li>
+            <li><a href="https://policies.google.com/terms" target="_blank">Вход через Google</a> (необязательно)</li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">Вход через Apple</a> (необязательно)</li>
+        </ul>
+        <p>
+            Мы не несём ответственности за контент, практики обработки данных или условия
+            каких-либо сторонних сервисов.
+        </p>
+
+        <!-- 7 -->
+        <h2>7. Премиум-подписка</h2>
+
+        <h3>7.1 Что входит</h3>
+        <p>
+            Премиум-подписка отключает рекламу и может открывать дополнительные функции,
+            описанные в Приложении на момент покупки. Состав премиум-функций может меняться
+            со временем; о существенных изменениях мы уведомим пользователей.
+        </p>
+
+        <h3>7.2 Цены и оплата</h3>
+        <p>
+            Цены подписки отображаются в Приложении до покупки и списываются через ваш аккаунт
+            Apple App Store или Google Play. Цены включают применимые налоги,
+            если это требуется законом.
+        </p>
+
+        <h3>7.3 Автопродление</h3>
+        <p>
+            Подписки автоматически продлеваются в конце каждого расчётного периода, если не были
+            отменены не позднее чем за 24 часа до даты продления. Плата за продление списывается
+            с вашего аккаунта в течение 24 часов до окончания текущего периода.
+        </p>
+
+        <h3>7.4 Как отменить</h3>
+        <p>Чтобы отменить подписку:</p>
+        <ul>
+            <li>
+                <strong>iOS:</strong> откройте <em>Настройки → [Ваше имя] → Подписки → Flatty → Отменить</em>
+            </li>
+            <li>
+                <strong>Android:</strong> откройте <em>Google Play → Профиль → Платежи и подписки → Подписки → Flatty → Отменить</em>
+            </li>
+        </ul>
+        <p>
+            Удаление Приложения <strong>не</strong> отменяет подписку.
+            Отмена вступает в силу в конце текущего расчётного периода;
+            до этой даты вы сохраняете доступ к премиум-функциям.
+        </p>
+
+        <h3>7.5 Возвраты</h3>
+        <p>
+            Все покупки обрабатываются Apple или Google, и возвраты регулируются их
+            соответствующими политиками:
+        </p>
+        <ul>
+            <li>
+                <strong>iOS:</strong>
+                <a href="https://support.apple.com/en-us/118223" target="_blank">политика возвратов Apple</a>
+            </li>
+            <li>
+                <strong>Android:</strong>
+                <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">политика возвратов Google Play</a>
+            </li>
+        </ul>
+
+        <h3>7.6 Потребители ЕС / ЕЭЗ — право на отказ от договора</h3>
+        <div class="highlight">
+            <p>
+                Если вы являетесь потребителем, находящимся в Европейской экономической зоне (ЕЭЗ),
+                вы вправе отказаться от покупки цифрового контента в течение
+                <strong>14 дней</strong> с момента транзакции при условии, что предоставление
+                цифрового контента ещё не началось с вашего предварительного явного согласия.
+            </p>
+            <p style="margin-bottom:0;">
+                Начиная использовать премиум-функции сразу после покупки, вы явно соглашаетесь
+                на немедленное предоставление цифрового контента и признаёте, что тем самым
+                утрачиваете право на отказ от договора. Это не затрагивает ваши законные права,
+                предусмотренные применимым законодательством о защите прав потребителей.
+            </p>
+        </div>
+
+        <!-- 8 -->
+        <h2>8. Реклама</h2>
+        <p>
+            Пользователи бесплатной версии могут видеть рекламу, показываемую Google AdMob.
+            У пользователей из ЕЭЗ будет запрошено согласие перед показом персонализированной
+            рекламы. Вы можете отказаться от персонализированной рекламы в любой момент
+            через настройки конфиденциальности Приложения.
+        </p>
+        <p>
+            Премиум-подписчики не видят стороннюю рекламу.
+        </p>
+
+        <!-- 9 -->
+        <h2>9. Подключение к интернету</h2>
+        <p>
+            Некоторые функции Приложения требуют активного интернет-соединения.
+            Мы не несём ответственности за неполную работоспособность Приложения,
+            если у вас нет доступа к Wi-Fi или исчерпан лимит мобильного трафика.
+        </p>
+        <p>
+            При использовании Приложения вне зоны Wi-Fi применяются условия вашего мобильного
+            оператора, включая возможную плату за роуминг данных. Используя Приложение,
+            вы принимаете на себя ответственность за такие расходы.
+        </p>
+
+        <!-- 10 -->
+        <h2>10. Отказ от гарантий</h2>
+        <p>
+            Приложение предоставляется «как есть» и «как доступно», без каких-либо гарантий,
+            явных или подразумеваемых, включая, помимо прочего, гарантии товарной пригодности,
+            пригодности для конкретной цели или ненарушения прав.
+        </p>
+        <p>
+            Мы не гарантируем, что Приложение будет работать бесперебойно, без ошибок,
+            вирусов или других вредоносных компонентов.
+        </p>
+        <div class="warning">
+            <p>
+                Информация об объявлениях в Приложении агрегируется из сторонних источников
+                и может быть неточной, неполной или устаревшей. Мы не несём ответственности
+                за любые убытки или ущерб, возникшие в результате доверия к информации
+                об объявлениях, отображаемой в Приложении.
+            </p>
+        </div>
+
+        <!-- 11 -->
+        <h2>11. Ограничение ответственности</h2>
+        <p>
+            В максимальной степени, допускаемой применимым законодательством, Kadilo Inc.
+            не несёт ответственности за любые косвенные, случайные, специальные, последующие
+            или штрафные убытки, включая упущенную выгоду, потерю данных или деловой репутации,
+            возникшие в связи с использованием вами Приложения.
+        </p>
+        <p>
+            Наша совокупная ответственность перед вами по любым требованиям, вытекающим из
+            настоящих Условий или связанным с Приложением, не превышает сумму, уплаченную вами
+            нам за 12 месяцев, предшествующих требованию.
+        </p>
+        <div class="highlight">
+            <p>
+                <strong>Потребители ЕС / ЕЭЗ:</strong> ничто в настоящих Условиях не ограничивает
+                и не исключает нашу ответственность за смерть или вред здоровью, причинённые
+                по неосторожности, за мошенничество, а также любую иную ответственность, которая
+                не может быть исключена или ограничена применимым законодательством о защите прав
+                потребителей. Ваши законные права не затрагиваются.
+            </p>
+        </div>
+
+        <!-- 12 -->
+        <h2>12. Изменения Приложения и настоящих Условий</h2>
+        <p>
+            Мы можем обновлять Приложение или настоящие Условия в любое время.
+            О существенных изменениях мы уведомим, обновив дату «Последнее обновление»
+            в верхней части этой страницы. Если этого требует закон, мы предоставим
+            более заметное уведомление (например, внутри Приложения).
+        </p>
+        <p>
+            Продолжение использования Приложения после публикации изменений означает принятие
+            обновлённых Условий. Если вы не принимаете обновлённые Условия,
+            вы должны прекратить использование Приложения.
+        </p>
+        <p>
+            Мы также можем прекратить работу Приложения или любой его функции в любое время.
+            Когда это разумно осуществимо, мы предоставим заблаговременное уведомление
+            о прекращении работы.
+        </p>
+
+        <!-- 13 -->
+        <h2>13. Прекращение доступа</h2>
+        <p>
+            Мы можем приостановить или прекратить ваш доступ к Приложению в случае нарушения
+            вами настоящих Условий, без предварительного уведомления. При прекращении доступа
+            все лицензии, предоставленные вам по настоящим Условиям, немедленно прекращаются.
+        </p>
+        <p>
+            Вы можете прекратить использование Приложения в любой момент, удалив его со своего
+            устройства. Удаление Приложения не отменяет активную подписку — см. раздел 7.4.
+            Об удалении данных аккаунта — см. раздел 3.
+        </p>
+
+        <!-- 14 -->
+        <h2>14. Применимое право и разрешение споров</h2>
+        <p>
+            Настоящие Условия регулируются применимым правом. Если вы являетесь потребителем
+            в ЕЭЗ, на вас распространяются императивные нормы законодательства о защите прав
+            потребителей страны вашего проживания, от которых нельзя отступить соглашением сторон.
+        </p>
+        <p>
+            Мы рекомендуем сначала связаться с нами по адресу
+            <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
+            для неформального урегулирования спора. Потребители из ЕЭЗ также могут воспользоваться
+            платформой онлайн-урегулирования споров Европейской комиссии:
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.
+        </p>
+
+        <!-- 15 -->
+        <h2>15. Связаться с нами</h2>
+        <p>
+            Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами:
+        </p>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>Настоящие Условия применяются к мобильному приложению Flatty для Android и iOS.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>These Terms apply to the Flatty mobile application for Android and iOS.</p>
-    </footer>
 
 </div>
+
+<script>
+    (function () {
+        function normalize(code) {
+            code = (code || '').toLowerCase();
+            if (code.indexOf('ru') === 0 || code.indexOf('be') === 0 || code.indexOf('uk') === 0) {
+                return 'ru';
+            }
+            return 'en';
+        }
+
+        window.setLang = function (lang) {
+            lang = lang === 'ru' ? 'ru' : 'en';
+            document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
+            document.getElementById('content-ru').style.display = lang === 'ru' ? '' : 'none';
+            document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+            document.getElementById('btn-ru').className = lang === 'ru' ? 'active' : '';
+            document.documentElement.lang = lang;
+            try {
+                var url = new URL(window.location.href);
+                url.searchParams.set('lang', lang);
+                window.history.replaceState(null, '', url.toString());
+            } catch (e) { /* older browsers: keep current URL */ }
+        };
+
+        var param = null;
+        try {
+            param = new URLSearchParams(window.location.search).get('lang');
+        } catch (e) { /* ignore */ }
+
+        var initial = param ? normalize(param) : normalize(navigator.language || navigator.userLanguage);
+        setLang(initial);
+    })();
+</script>
 </body>
 </html>

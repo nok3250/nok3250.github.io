@@ -34,7 +34,14 @@
         .meta {
             font-size: 14px;
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 8px;
+        }
+
+        .translation-note {
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 32px;
         }
 
         h2 {
@@ -122,294 +129,750 @@
             font-size: 13px;
             color: #888;
         }
+
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+        .lang-switch button {
+            font: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border: 1px solid #d0d0d0;
+            border-radius: 16px;
+            background: #ffffff;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .lang-switch button.active {
+            background: #0066cc;
+            border-color: #0066cc;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <h1>Privacy Policy — Flatty</h1>
-    <p class="meta">
-        <strong>Effective date:</strong> June 17, 2025 &nbsp;&middot;&nbsp;
-        <strong>Last updated:</strong> June 17, 2025
-    </p>
-
-    <!-- 1 -->
-    <h2>1. Introduction</h2>
-    <p>
-        Kadilo Inc. ("we", "us", or "our") operates the <strong>Flatty</strong> mobile application
-        (the "App") — a rental apartment aggregator available in Belarus and Poland.
-        This Privacy Policy explains what personal data we collect, how we use it,
-        and what rights you have regarding your data.
-    </p>
-    <p>
-        By using the App, you agree to the collection and use of information as described in this policy.
-    </p>
-
-    <!-- 2 -->
-    <h2>2. Data Controller</h2>
-    <div class="contact-block">
-        <p><strong>Kadilo Inc.</strong></p>
-        <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
-    </div>
-    <p style="margin-top:14px;">
-        For all privacy-related requests, please contact us at the email address above.
-    </p>
-
-    <!-- 3 -->
-    <h2>3. What Data We Collect and Why</h2>
-
-    <h3>3.1 Data collected automatically</h3>
-    <p>When you use the App, we automatically collect the following data:</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Purpose</th>
-                <th>Legal basis</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>IP address</td>
-                <td>Security, fraud prevention</td>
-                <td>Legitimate interest</td>
-            </tr>
-            <tr>
-                <td>Device name, OS version, app version</td>
-                <td>Bug diagnostics, compatibility</td>
-                <td>Legitimate interest</td>
-            </tr>
-            <tr>
-                <td>App usage data (screens visited, session duration)</td>
-                <td>Product improvement</td>
-                <td>Legitimate interest</td>
-            </tr>
-            <tr>
-                <td>Crash logs and error reports</td>
-                <td>Bug fixing</td>
-                <td>Legitimate interest</td>
-            </tr>
-            <tr>
-                <td>Advertising ID (GAID on Android, IDFA on iOS)</td>
-                <td>Showing relevant ads (non-premium users only)</td>
-                <td>Consent</td>
-            </tr>
-            <tr>
-                <td>Push notification token</td>
-                <td>Delivering notifications about new listings</td>
-                <td>Consent</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>3.2 Data you provide voluntarily</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Purpose</th>
-                <th>Legal basis</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Saved searches and filters</td>
-                <td>Restoring your preferences</td>
-                <td>Contract performance</td>
-            </tr>
-            <tr>
-                <td>Favourite listings</td>
-                <td>Providing the favourites feature</td>
-                <td>Contract performance</td>
-            </tr>
-            <tr>
-                <td>Notes on listings</td>
-                <td>Providing the notes feature</td>
-                <td>Contract performance</td>
-            </tr>
-            <tr>
-                <td>Approximate location</td>
-                <td>Displaying listings on the map</td>
-                <td>Consent</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="highlight">
-        We do <strong>not</strong> collect your name, email address, phone number,
-        or any payment details through the App itself.
+    <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+        <button type="button" id="btn-ru" onclick="setLang('ru')">Русский</button>
     </div>
 
-    <!-- 4 -->
-    <h2>4. Third-Party Services</h2>
-    <p>
-        We use the following third-party services that may collect data
-        as described in their own privacy policies:
-    </p>
-    <table>
-        <thead>
-            <tr>
-                <th>Service</th>
-                <th>Purpose</th>
-                <th>Privacy Policy</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Google Play Services</td>
-                <td>Core Android functionality</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-            </tr>
-            <tr>
-                <td>Google AdMob</td>
-                <td>Displaying ads (non-premium users)</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-            </tr>
-            <tr>
-                <td>Firebase Cloud Messaging</td>
-                <td>Push notifications</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
-            </tr>
-            <tr>
-                <td>Google Maps SDK</td>
-                <td>Displaying listings on the map</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
-            </tr>
-        </tbody>
-    </table>
-    <p>
-        We do <strong>not</strong> integrate Facebook, Appodeal, or any other advertising networks
-        beyond those listed above.
-    </p>
+    <!-- ======================= ENGLISH ======================= -->
+    <div id="content-en" class="lang-content">
 
-    <!-- 5 -->
-    <h2>5. Advertising and Consent (GDPR / EEA Users)</h2>
-    <p>
-        If you are located in the European Economic Area (EEA), including Poland,
-        we will ask for your consent before showing personalised ads via Google AdMob.
-    </p>
-    <ul>
-        <li>If you <strong>grant consent</strong>, AdMob may use your Advertising ID to show ads relevant to your interests.</li>
-        <li>If you <strong>decline consent</strong>, you will still see ads, but they will not be personalised.</li>
-        <li>You can <strong>withdraw or change your consent</strong> at any time through the App's privacy settings or by contacting us at <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.</li>
-    </ul>
-    <p>
-        Google AdMob processes ad-related data under its own terms. Data may be transferred
-        to Google servers in the United States under Standard Contractual Clauses
-        approved by the European Commission.
-    </p>
+        <h1>Privacy Policy — Flatty</h1>
+        <p class="meta">
+            <strong>Effective date:</strong> June 17, 2025 &nbsp;&middot;&nbsp;
+            <strong>Last updated:</strong> August 19, 2026
+        </p>
+        <p class="translation-note">&nbsp;</p>
 
-    <!-- 6 -->
-    <h2>6. App Tracking Transparency (iOS)</h2>
-    <p>
-        On iOS 14 and later, we request permission to access your device's Advertising Identifier (IDFA)
-        through Apple's App Tracking Transparency (ATT) framework.
-        This identifier is used solely for delivering relevant ads via Google AdMob.
-    </p>
-    <ul>
-        <li>If you <strong>allow tracking</strong>, personalised ads may be shown.</li>
-        <li>If you <strong>decline</strong>, non-personalised ads will be shown instead.</li>
-    </ul>
-    <p>
-        You can change this permission at any time in
-        <strong>iPhone Settings → Privacy &amp; Security → Tracking → Flatty</strong>.
-    </p>
+        <!-- 1 -->
+        <h2>1. Introduction</h2>
+        <p>
+            Kadilo Inc. ("we", "us", or "our") operates the <strong>Flatty</strong> mobile application
+            (the "App") — a rental apartment aggregator available in Belarus.
+            This Privacy Policy explains what personal data we collect, how we use it,
+            and what rights you have regarding your data.
+        </p>
+        <p>
+            By using the App, you agree to the collection and use of information as described in this policy.
+        </p>
 
-    <!-- 7 -->
-    <h2>7. International Data Transfers</h2>
-    <p>
-        We use services provided by Google LLC, which is based in the United States.
-        When data is transferred outside the EEA, Google relies on
-        Standard Contractual Clauses (SCCs) as the legal mechanism to ensure adequate data protection.
-        For more information, see
-        <a href="https://business.safety.google/gdpr/" target="_blank">Google's data transfer FAQ</a>.
-    </p>
+        <!-- 2 -->
+        <h2>2. Data Controller</h2>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+        <p style="margin-top:14px;">
+            For all privacy-related requests, please contact us at the email address above.
+        </p>
 
-    <!-- 8 -->
-    <h2>8. Data Retention</h2>
-    <p>
-        We retain automatically collected technical data (logs, crash reports)
-        for no longer than <strong>12 months</strong>.
-        Data stored locally on your device (favourites, filters, notes) remains
-        until you delete the App or clear its data.
-        We do not operate user accounts, so there is no account deletion process.
-    </p>
+        <!-- 3 -->
+        <h2>3. What Data We Collect and Why</h2>
 
-    <!-- 9 -->
-    <h2>9. Children's Privacy</h2>
-    <p>
-        The App is not directed to children under the age of 13.
-        We do not knowingly collect personal data from children.
-        If you believe your child has provided us with personal data,
-        please contact us at <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
-        and we will delete it promptly.
-    </p>
+        <h3>3.1 Data collected automatically</h3>
+        <p>When you use the App, we automatically collect the following data:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Purpose</th>
+                    <th>Legal basis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IP address</td>
+                    <td>Security, fraud prevention</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>Device name, OS version, app version</td>
+                    <td>Bug diagnostics, compatibility</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>App usage data (screens visited, session duration, in-app events)</td>
+                    <td>Product improvement, usage analytics</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>Crash logs and error reports</td>
+                    <td>Bug fixing</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td>Advertising ID (GAID on Android, IDFA on iOS)</td>
+                    <td>Showing relevant ads (non-premium users only)</td>
+                    <td>Consent</td>
+                </tr>
+                <tr>
+                    <td>Push notification token</td>
+                    <td>Delivering notifications about new listings</td>
+                    <td>Consent</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- 10 -->
-    <h2>10. Your Rights (EEA / GDPR)</h2>
-    <p>
-        If you are located in the EEA, you have the following rights
-        under the General Data Protection Regulation (GDPR):
-    </p>
-    <ul>
-        <li><strong>Right of access</strong> — you can request a copy of the personal data we hold about you.</li>
-        <li><strong>Right to rectification</strong> — you can ask us to correct inaccurate data.</li>
-        <li><strong>Right to erasure</strong> ("right to be forgotten") — you can request deletion of your personal data.</li>
-        <li><strong>Right to restriction</strong> — you can ask us to restrict how we process your data.</li>
-        <li><strong>Right to data portability</strong> — you can request your data in a structured, machine-readable format.</li>
-        <li><strong>Right to object</strong> — you can object to processing based on legitimate interest.</li>
-        <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you can withdraw it at any time without affecting the lawfulness of prior processing.</li>
-    </ul>
-    <p>
-        To exercise any of these rights, contact us at
-        <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.
-        We will respond within <strong>30 days</strong>.
-    </p>
-    <p>You also have the right to lodge a complaint with a supervisory authority. In Poland, this is:</p>
-    <div class="contact-block">
-        <p><strong>Urząd Ochrony Danych Osobowych (UODO)</strong></p>
-        <p>ul. Stawki 2, 00-193 Warsaw, Poland</p>
-        <p><a href="https://uodo.gov.pl" target="_blank">uodo.gov.pl</a></p>
+        <h3>3.2 Data you provide voluntarily</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Purpose</th>
+                    <th>Legal basis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email address (only if you sign in with Google or Apple)</td>
+                    <td>Optional account: linking your profile and Premium subscription across devices and reinstalls</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>Saved searches and filters</td>
+                    <td>Restoring your preferences</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>Favourite listings</td>
+                    <td>Providing the favourites feature</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>Notes on listings</td>
+                    <td>Providing the notes feature</td>
+                    <td>Contract performance</td>
+                </tr>
+                <tr>
+                    <td>Approximate location</td>
+                    <td>Displaying listings on the map</td>
+                    <td>Consent</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.3 Optional sign-in</h3>
+        <p>
+            Signing in is <strong>optional</strong> — the App works without an account.
+            If you choose to sign in with Google or Apple, we receive and store your email address,
+            which we use to link your profile and purchases across devices.
+            We never receive or store your password; authentication is performed entirely
+            by Google or Apple.
+        </p>
+
+        <div class="highlight">
+            Unless you choose to sign in, we do <strong>not</strong> collect your name, email address,
+            or phone number. We never collect or store payment details — all purchases are processed
+            entirely by Apple or Google.
+        </div>
+
+        <!-- 4 -->
+        <h2>4. Third-Party Services</h2>
+        <p>
+            We use the following third-party services that may collect data
+            as described in their own privacy policies:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Play Services</td>
+                    <td>Core Android functionality</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google AdMob</td>
+                    <td>Displaying ads (non-premium users)</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Cloud Messaging</td>
+                    <td>Push notifications</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Analytics</td>
+                    <td>Anonymous usage statistics</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Crashlytics</td>
+                    <td>Crash reporting</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google Maps SDK</td>
+                    <td>Displaying listings on the map</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google Sign-In (optional)</td>
+                    <td>Account sign-in</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Sign in with Apple (optional)</td>
+                    <td>Account sign-in</td>
+                    <td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            We do <strong>not</strong> integrate Facebook, Appodeal, or any other advertising networks
+            beyond those listed above.
+        </p>
+
+        <!-- 5 -->
+        <h2>5. Advertising and Consent (GDPR / EEA Users)</h2>
+        <p>
+            If you are located in the European Economic Area (EEA),
+            we will ask for your consent before showing personalised ads via Google AdMob.
+        </p>
+        <ul>
+            <li>If you <strong>grant consent</strong>, AdMob may use your Advertising ID to show ads relevant to your interests.</li>
+            <li>If you <strong>decline consent</strong>, you will still see ads, but they will not be personalised.</li>
+            <li>You can <strong>withdraw or change your consent</strong> at any time through the App's privacy settings or by contacting us at <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.</li>
+        </ul>
+        <p>
+            Google AdMob processes ad-related data under its own terms. Data may be transferred
+            to Google servers in the United States under Standard Contractual Clauses
+            approved by the European Commission.
+        </p>
+
+        <!-- 6 -->
+        <h2>6. App Tracking Transparency (iOS)</h2>
+        <p>
+            On iOS 14 and later, we request permission to access your device's Advertising Identifier (IDFA)
+            through Apple's App Tracking Transparency (ATT) framework.
+            This identifier is used solely for delivering relevant ads via Google AdMob.
+        </p>
+        <ul>
+            <li>If you <strong>allow tracking</strong>, personalised ads may be shown.</li>
+            <li>If you <strong>decline</strong>, non-personalised ads will be shown instead.</li>
+        </ul>
+        <p>
+            You can change this permission at any time in
+            <strong>iPhone Settings → Privacy &amp; Security → Tracking → Flatty</strong>.
+        </p>
+
+        <!-- 7 -->
+        <h2>7. International Data Transfers</h2>
+        <p>
+            We use services provided by Google LLC, which is based in the United States.
+            When data is transferred outside the EEA, Google relies on
+            Standard Contractual Clauses (SCCs) as the legal mechanism to ensure adequate data protection.
+            For more information, see
+            <a href="https://business.safety.google/gdpr/" target="_blank">Google's data transfer FAQ</a>.
+        </p>
+
+        <!-- 8 -->
+        <h2>8. Data Retention</h2>
+        <p>
+            We retain automatically collected technical data (logs, crash reports)
+            for no longer than <strong>12 months</strong>.
+            Data stored locally on your device (favourites, filters, notes) remains
+            until you delete the App or clear its data.
+            If you have signed in, your email address and the profile data linked to it
+            are stored until you request their deletion (see Section 9).
+        </p>
+
+        <!-- 9 -->
+        <h2>9. Account Deletion</h2>
+        <p>
+            If you have signed in with Google or Apple and want your account data removed,
+            email us at <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
+            from the address you used to sign in.
+            We will delete your email address and the profile data associated with it
+            within <strong>30 days</strong>.
+            Deleting your account does not cancel an active Premium subscription —
+            manage subscriptions through your Apple or Google account settings.
+        </p>
+
+        <!-- 10 -->
+        <h2>10. Children's Privacy</h2>
+        <p>
+            The App is not directed to children under the age of 16.
+            We do not knowingly collect personal data from children.
+            If you believe your child has provided us with personal data,
+            please contact us at <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
+            and we will delete it promptly.
+        </p>
+
+        <!-- 11 -->
+        <h2>11. Your Rights</h2>
+        <p>
+            For users in the Republic of Belarus, we process personal data in accordance with
+            the Law of the Republic of Belarus of 7 May 2021 No. 99-З "On Personal Data Protection".
+            If you are located in the EEA, you additionally have rights
+            under the General Data Protection Regulation (GDPR).
+            In both cases these include:
+        </p>
+        <ul>
+            <li><strong>Right of access</strong> — you can request a copy of the personal data we hold about you.</li>
+            <li><strong>Right to rectification</strong> — you can ask us to correct inaccurate data.</li>
+            <li><strong>Right to erasure</strong> ("right to be forgotten") — you can request deletion of your personal data.</li>
+            <li><strong>Right to restriction</strong> — you can ask us to restrict how we process your data.</li>
+            <li><strong>Right to data portability</strong> — you can request your data in a structured, machine-readable format.</li>
+            <li><strong>Right to object</strong> — you can object to processing based on legitimate interest.</li>
+            <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you can withdraw it at any time without affecting the lawfulness of prior processing.</li>
+        </ul>
+        <p>
+            To exercise any of these rights, contact us at
+            <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.
+            We will respond within <strong>30 days</strong>.
+            You also have the right to lodge a complaint with the data protection
+            supervisory authority in your country of residence.
+        </p>
+
+        <!-- 12 -->
+        <h2>12. Security</h2>
+        <p>
+            We use commercially reasonable technical and organisational measures to protect your data.
+            However, no method of transmission over the internet or electronic storage is 100% secure.
+            We cannot guarantee absolute security.
+        </p>
+
+        <!-- 13 -->
+        <h2>13. Cookies</h2>
+        <p>
+            The App itself does not use cookies. However, third-party SDKs embedded in the App
+            (such as Google AdMob) may use local storage or similar technologies
+            for ad measurement and frequency capping.
+        </p>
+
+        <!-- 14 -->
+        <h2>14. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time.
+            We will notify you of significant changes by updating the "Last updated" date
+            at the top of this page. We encourage you to review this policy periodically.
+            Continued use of the App after changes are posted constitutes acceptance
+            of the updated policy.
+        </p>
+
+        <!-- 15 -->
+        <h2>15. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>This policy applies to the Flatty mobile application for Android and iOS.</p>
+        </footer>
     </div>
 
-    <!-- 11 -->
-    <h2>11. Security</h2>
-    <p>
-        We use commercially reasonable technical and organisational measures to protect your data.
-        However, no method of transmission over the internet or electronic storage is 100% secure.
-        We cannot guarantee absolute security.
-    </p>
+    <!-- ======================= РУССКИЙ ======================= -->
+    <div id="content-ru" class="lang-content" style="display:none" lang="ru">
 
-    <!-- 12 -->
-    <h2>12. Cookies</h2>
-    <p>
-        The App itself does not use cookies. However, third-party SDKs embedded in the App
-        (such as Google AdMob) may use local storage or similar technologies
-        for ad measurement and frequency capping.
-    </p>
+        <h1>Политика конфиденциальности — Flatty</h1>
+        <p class="meta">
+            <strong>Дата вступления в силу:</strong> 17 июня 2025 г. &nbsp;&middot;&nbsp;
+            <strong>Последнее обновление:</strong> 19 августа 2026 г.
+        </p>
+        <p class="translation-note">
+            Перевод предоставлен для удобства. В случае расхождений преимущественную силу имеет английская версия.
+        </p>
 
-    <!-- 13 -->
-    <h2>13. Changes to This Policy</h2>
-    <p>
-        We may update this Privacy Policy from time to time.
-        We will notify you of significant changes by updating the "Last updated" date
-        at the top of this page. We encourage you to review this policy periodically.
-        Continued use of the App after changes are posted constitutes acceptance
-        of the updated policy.
-    </p>
+        <!-- 1 -->
+        <h2>1. Введение</h2>
+        <p>
+            Kadilo Inc. («мы», «нас», «наш») управляет мобильным приложением <strong>Flatty</strong>
+            («Приложение») — агрегатором объявлений об аренде квартир, доступным в Беларуси.
+            Настоящая Политика конфиденциальности объясняет, какие персональные данные мы собираем,
+            как мы их используем и какие права у вас есть в отношении ваших данных.
+        </p>
+        <p>
+            Используя Приложение, вы соглашаетесь со сбором и использованием информации,
+            как описано в настоящей политике.
+        </p>
 
-    <!-- 14 -->
-    <h2>14. Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
-    <div class="contact-block">
-        <p><strong>Kadilo Inc.</strong></p>
-        <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        <!-- 2 -->
+        <h2>2. Оператор данных</h2>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+        <p style="margin-top:14px;">
+            По всем вопросам, связанным с персональными данными, обращайтесь по указанному выше адресу.
+        </p>
+
+        <!-- 3 -->
+        <h2>3. Какие данные мы собираем и зачем</h2>
+
+        <h3>3.1 Данные, собираемые автоматически</h3>
+        <p>При использовании Приложения мы автоматически собираем следующие данные:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Данные</th>
+                    <th>Цель</th>
+                    <th>Правовое основание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IP-адрес</td>
+                    <td>Безопасность, предотвращение мошенничества</td>
+                    <td>Законный интерес</td>
+                </tr>
+                <tr>
+                    <td>Название устройства, версия ОС, версия приложения</td>
+                    <td>Диагностика ошибок, совместимость</td>
+                    <td>Законный интерес</td>
+                </tr>
+                <tr>
+                    <td>Данные об использовании приложения (посещённые экраны, длительность сессий, события в приложении)</td>
+                    <td>Улучшение продукта, аналитика использования</td>
+                    <td>Законный интерес</td>
+                </tr>
+                <tr>
+                    <td>Журналы сбоев и отчёты об ошибках</td>
+                    <td>Исправление ошибок</td>
+                    <td>Законный интерес</td>
+                </tr>
+                <tr>
+                    <td>Рекламный идентификатор (GAID на Android, IDFA на iOS)</td>
+                    <td>Показ релевантной рекламы (только для пользователей без премиум-подписки)</td>
+                    <td>Согласие</td>
+                </tr>
+                <tr>
+                    <td>Токен push-уведомлений</td>
+                    <td>Доставка уведомлений о новых объявлениях</td>
+                    <td>Согласие</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.2 Данные, которые вы предоставляете добровольно</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Данные</th>
+                    <th>Цель</th>
+                    <th>Правовое основание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Адрес электронной почты (только при входе через Google или Apple)</td>
+                    <td>Необязательный аккаунт: связывание профиля и премиум-подписки между устройствами и переустановками</td>
+                    <td>Исполнение договора</td>
+                </tr>
+                <tr>
+                    <td>Сохранённые поиски и фильтры</td>
+                    <td>Восстановление ваших настроек</td>
+                    <td>Исполнение договора</td>
+                </tr>
+                <tr>
+                    <td>Избранные объявления</td>
+                    <td>Работа функции «Избранное»</td>
+                    <td>Исполнение договора</td>
+                </tr>
+                <tr>
+                    <td>Заметки к объявлениям</td>
+                    <td>Работа функции заметок</td>
+                    <td>Исполнение договора</td>
+                </tr>
+                <tr>
+                    <td>Приблизительное местоположение</td>
+                    <td>Отображение объявлений на карте</td>
+                    <td>Согласие</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.3 Необязательный вход в аккаунт</h3>
+        <p>
+            Вход в аккаунт <strong>необязателен</strong> — Приложение работает и без него.
+            Если вы решите войти через Google или Apple, мы получаем и храним ваш адрес
+            электронной почты, который используется для связывания вашего профиля и покупок
+            между устройствами. Мы никогда не получаем и не храним ваш пароль —
+            аутентификацию полностью выполняют Google или Apple.
+        </p>
+
+        <div class="highlight">
+            Если вы не входите в аккаунт, мы <strong>не</strong> собираем ваше имя,
+            адрес электронной почты или номер телефона. Мы никогда не собираем и не храним
+            платёжные данные — все покупки полностью обрабатываются Apple или Google.
+        </div>
+
+        <!-- 4 -->
+        <h2>4. Сторонние сервисы</h2>
+        <p>
+            Мы используем следующие сторонние сервисы, которые могут собирать данные
+            в соответствии с их собственными политиками конфиденциальности:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Сервис</th>
+                    <th>Цель</th>
+                    <th>Политика конфиденциальности</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Play Services</td>
+                    <td>Базовая функциональность Android</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google AdMob</td>
+                    <td>Показ рекламы (пользователям без премиум-подписки)</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Cloud Messaging</td>
+                    <td>Push-уведомления</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Analytics</td>
+                    <td>Анонимная статистика использования</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Firebase Crashlytics</td>
+                    <td>Отчёты о сбоях</td>
+                    <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google Maps SDK</td>
+                    <td>Отображение объявлений на карте</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Вход через Google (необязательно)</td>
+                    <td>Вход в аккаунт</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Вход через Apple (необязательно)</td>
+                    <td>Вход в аккаунт</td>
+                    <td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Мы <strong>не</strong> интегрируем Facebook, Appodeal или какие-либо другие рекламные сети,
+            кроме перечисленных выше.
+        </p>
+
+        <!-- 5 -->
+        <h2>5. Реклама и согласие (GDPR / пользователи ЕЭЗ)</h2>
+        <p>
+            Если вы находитесь в Европейской экономической зоне (ЕЭЗ),
+            мы запросим ваше согласие перед показом персонализированной рекламы через Google AdMob.
+        </p>
+        <ul>
+            <li>Если вы <strong>даёте согласие</strong>, AdMob может использовать ваш рекламный идентификатор для показа рекламы, соответствующей вашим интересам.</li>
+            <li>Если вы <strong>отказываетесь</strong>, реклама всё равно будет показываться, но не будет персонализированной.</li>
+            <li>Вы можете <strong>отозвать или изменить согласие</strong> в любой момент через настройки конфиденциальности Приложения или написав нам на <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.</li>
+        </ul>
+        <p>
+            Google AdMob обрабатывает данные, связанные с рекламой, на собственных условиях.
+            Данные могут передаваться на серверы Google в США на основании
+            Стандартных договорных положений, одобренных Европейской комиссией.
+        </p>
+
+        <!-- 6 -->
+        <h2>6. App Tracking Transparency (iOS)</h2>
+        <p>
+            На iOS 14 и новее мы запрашиваем разрешение на доступ к рекламному идентификатору
+            устройства (IDFA) через механизм Apple App Tracking Transparency (ATT).
+            Этот идентификатор используется исключительно для показа релевантной рекламы через Google AdMob.
+        </p>
+        <ul>
+            <li>Если вы <strong>разрешите отслеживание</strong>, может показываться персонализированная реклама.</li>
+            <li>Если вы <strong>откажетесь</strong>, будет показываться неперсонализированная реклама.</li>
+        </ul>
+        <p>
+            Вы можете изменить это разрешение в любой момент:
+            <strong>Настройки iPhone → Конфиденциальность и безопасность → Отслеживание → Flatty</strong>.
+        </p>
+
+        <!-- 7 -->
+        <h2>7. Международная передача данных</h2>
+        <p>
+            Мы используем сервисы Google LLC, базирующейся в США.
+            При передаче данных за пределы ЕЭЗ Google опирается на
+            Стандартные договорные положения (SCC) как правовой механизм обеспечения
+            надлежащей защиты данных. Подробнее см.
+            <a href="https://business.safety.google/gdpr/" target="_blank">FAQ Google о передаче данных</a>.
+        </p>
+
+        <!-- 8 -->
+        <h2>8. Сроки хранения данных</h2>
+        <p>
+            Автоматически собираемые технические данные (журналы, отчёты о сбоях)
+            мы храним не дольше <strong>12 месяцев</strong>.
+            Данные, хранящиеся локально на вашем устройстве (избранное, фильтры, заметки),
+            сохраняются до удаления Приложения или очистки его данных.
+            Если вы входили в аккаунт, ваш адрес электронной почты и связанные с ним данные профиля
+            хранятся до тех пор, пока вы не запросите их удаление (см. раздел 9).
+        </p>
+
+        <!-- 9 -->
+        <h2>9. Удаление аккаунта</h2>
+        <p>
+            Если вы входили через Google или Apple и хотите удалить данные своего аккаунта,
+            напишите нам на <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>
+            с адреса, который использовался для входа.
+            Мы удалим ваш адрес электронной почты и связанные с ним данные профиля
+            в течение <strong>30 дней</strong>.
+            Удаление аккаунта не отменяет активную премиум-подписку —
+            управляйте подписками в настройках аккаунта Apple или Google.
+        </p>
+
+        <!-- 10 -->
+        <h2>10. Конфиденциальность детей</h2>
+        <p>
+            Приложение не предназначено для детей младше 16 лет.
+            Мы сознательно не собираем персональные данные детей.
+            Если вы считаете, что ваш ребёнок предоставил нам персональные данные,
+            свяжитесь с нами по адресу <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>,
+            и мы незамедлительно их удалим.
+        </p>
+
+        <!-- 11 -->
+        <h2>11. Ваши права</h2>
+        <p>
+            Для пользователей в Республике Беларусь мы обрабатываем персональные данные
+            в соответствии с Законом Республики Беларусь от 7 мая 2021 г. № 99-З
+            «О защите персональных данных».
+            Если вы находитесь в ЕЭЗ, у вас дополнительно есть права,
+            предусмотренные Общим регламентом по защите данных (GDPR).
+            В обоих случаях они включают:
+        </p>
+        <ul>
+            <li><strong>Право на доступ</strong> — вы можете запросить копию персональных данных, которые мы о вас храним.</li>
+            <li><strong>Право на исправление</strong> — вы можете попросить нас исправить неточные данные.</li>
+            <li><strong>Право на удаление</strong> («право быть забытым») — вы можете запросить удаление своих персональных данных.</li>
+            <li><strong>Право на ограничение обработки</strong> — вы можете попросить нас ограничить обработку ваших данных.</li>
+            <li><strong>Право на переносимость данных</strong> — вы можете запросить свои данные в структурированном, машиночитаемом формате.</li>
+            <li><strong>Право на возражение</strong> — вы можете возразить против обработки на основании законного интереса.</li>
+            <li><strong>Право отозвать согласие</strong> — если обработка основана на согласии, вы можете отозвать его в любой момент; это не влияет на законность обработки до отзыва.</li>
+        </ul>
+        <p>
+            Для реализации любого из этих прав напишите нам на
+            <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a>.
+            Мы ответим в течение <strong>30 дней</strong>.
+            Вы также вправе подать жалобу в надзорный орган по защите персональных данных
+            страны вашего проживания.
+        </p>
+
+        <!-- 12 -->
+        <h2>12. Безопасность</h2>
+        <p>
+            Мы применяем коммерчески разумные технические и организационные меры для защиты
+            ваших данных. Однако ни один способ передачи данных через интернет или их
+            электронного хранения не является безопасным на 100%.
+            Мы не можем гарантировать абсолютную безопасность.
+        </p>
+
+        <!-- 13 -->
+        <h2>13. Cookies</h2>
+        <p>
+            Само Приложение не использует cookies. Однако встроенные в Приложение сторонние SDK
+            (например, Google AdMob) могут использовать локальное хранилище или аналогичные
+            технологии для измерения рекламы и ограничения частоты её показа.
+        </p>
+
+        <!-- 14 -->
+        <h2>14. Изменения настоящей политики</h2>
+        <p>
+            Мы можем время от времени обновлять настоящую Политику конфиденциальности.
+            О существенных изменениях мы уведомим, обновив дату «Последнее обновление»
+            в верхней части этой страницы. Рекомендуем периодически просматривать политику.
+            Продолжение использования Приложения после публикации изменений означает
+            принятие обновлённой политики.
+        </p>
+
+        <!-- 15 -->
+        <h2>15. Связаться с нами</h2>
+        <p>Если у вас есть вопросы или замечания по настоящей Политике конфиденциальности, свяжитесь с нами:</p>
+        <div class="contact-block">
+            <p><strong>Kadilo Inc.</strong></p>
+            <p>Email: <a href="mailto:flattyby@gmail.com">flattyby@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>Настоящая политика применяется к мобильному приложению Flatty для Android и iOS.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>This policy applies to the Flatty mobile application for Android and iOS.</p>
-    </footer>
 
 </div>
+
+<script>
+    (function () {
+        function normalize(code) {
+            code = (code || '').toLowerCase();
+            if (code.indexOf('ru') === 0 || code.indexOf('be') === 0 || code.indexOf('uk') === 0) {
+                return 'ru';
+            }
+            return 'en';
+        }
+
+        window.setLang = function (lang) {
+            lang = lang === 'ru' ? 'ru' : 'en';
+            document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
+            document.getElementById('content-ru').style.display = lang === 'ru' ? '' : 'none';
+            document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
+            document.getElementById('btn-ru').className = lang === 'ru' ? 'active' : '';
+            document.documentElement.lang = lang;
+            try {
+                var url = new URL(window.location.href);
+                url.searchParams.set('lang', lang);
+                window.history.replaceState(null, '', url.toString());
+            } catch (e) { /* older browsers: keep current URL */ }
+        };
+
+        var param = null;
+        try {
+            param = new URLSearchParams(window.location.search).get('lang');
+        } catch (e) { /* ignore */ }
+
+        var initial = param ? normalize(param) : normalize(navigator.language || navigator.userLanguage);
+        setLang(initial);
+    })();
+</script>
 </body>
 </html>
