@@ -1,4 +1,8 @@
 {
   "apiUrl": "https://flatty-api-dqgaagenbbeka8bn.polandcentral-01.azurewebsites.net",
-  "signalRHost": "https://flatty-signal-eufhd7egfwfgewey.polandcentral-01.azurewebsites.net/notify"
+  "signalRHost": "https://flatty-signal-eufhd7egfwfgewey.polandcentral-01.azurewebsites.net/notify",
+  "remoteConfig": {
+    "paywall_exposure_enabled": true,
+    "paywall_exposure_percent": 10
+  }
 }
